@@ -16,4 +16,30 @@
     background-color: green;
     width: 20%;
     height: 200px;
+    float: left;
+}
+
+.win-loss {
+    background-color: aqua;
+    width: 15%;
+    height: 200px;
+    float: left; 
+    margin-left: 10px;
+}
+
+.crystals{
+    clear: both;
+    padding-top: 20px;
+}
+
+.total {
+    background-color: teal;
+    width: 40%;
+    height: 50px;
+}
+
+.totalBox {
+    background-color: teal;
+    width: 40%;
+    height: 150px;
 }
