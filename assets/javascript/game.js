@@ -34,6 +34,7 @@ var reset = function() {
     userTotal= 0;
 
 var randomNumber = 19 + Math.floor(Math.random()* 120);
+console.log("you gotta guess this number " + randomNumber);
     var pinkCrystal = 1 + Math.floor(Math.random() * 12);
 console.log("pink crystal number " + pinkCrystal);
 
@@ -46,26 +47,27 @@ console.log("orange crystal number" + orangeCrystal);
 var blackCrystal = 1 + Math.floor(Math.random() * 12);
 console.log("black crystal number" + blackCrystal); 
 
+$("#numberToGuess").html(randomNumber);
 $("#totalScore").html(userTotal);
 $("#wins").html(wins);
 $("#losses").html (losses);
-$("#numberToGuess").html(randomNumber);
+
 
 };
 
 
 //tells user if he won or lost
 var userWin = function() {
-    if (userTotal === randomNumber){
-    console.log("user wins!!");
+    if (userTotal == randomNumber) {
     wins ++;
+    console.log("user wins!!");
     $("#wins").html(wins);
     reset();
     }
 
     else if (userTotal > randomNumber){
+         losses ++;
         console.log("you loose");
-        losses ++;
         $("#losses").html (losses);
         reset();
     }
@@ -106,4 +108,4 @@ $("#blackCrystal").on("click", function(){
     console.log(userTotal);
     $("#totalScore").html(userTotal);
     userWin ();
-});
+})
