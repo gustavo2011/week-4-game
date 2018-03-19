@@ -6,7 +6,8 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
-    <script src="./assets/javascript/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    
 </head>
 <body>
  <div class="container">
@@ -29,16 +30,19 @@
 
    <!-- Random number and Win/Loss tracker -->
     <div class="board">
-        <h1 id="random-number"></h1>
+        <h1 id="numberToGuess"></h1>
     </div>
 
-    <div class="win-loss"></div>
+    <div class="win-loss">
+      <h6> Wins : <span id="wins"></span></h6>
+      <h6> Losses : <span id="losses"></span></h6>
+    </div>
   <!-- Images -->
     <div class="crystals">
-      <img src="./assets/images/pink-crystal.png" target="_blank" id="pink" width="100px" height="100px">
-      <img src="./assets/images/purple-crystal.png" target="_blank" id="purple" width="100px" height="100px">
-      <img src="./assets/images/sketch.png" target="_blank" id="orange" height="100px" width="100px">
-      <img src="./assets/images/c8c58cd5bdf7d6e3e7880d1e61ebb24c.png" target="_blank" height="100px" width="100px">
+      <img src="./assets/images/pink-crystal.png"  id="pinkCrystal" width="100px" height="100px">
+      <img src="./assets/images/purple-crystal.png"  id="purpleCrystal" width="100px" height="100px">
+      <img src="./assets/images/sketch.png"  id="orangeCrystal" height="100px" width="100px">
+      <img src="./assets/images/c8c58cd5bdf7d6e3e7880d1e61ebb24c.png" id="blackCrystal" height="100px" width="100px">
     </div>
 
     <!-- total -->
@@ -53,6 +57,7 @@
     
 
   </div>
+    <script src="./assets/javascript/game.js"></script>
  </body>
   
 </html>
