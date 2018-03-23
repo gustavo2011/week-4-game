@@ -1,3 +1,4 @@
+
 //computer will generate a random number
 var randomNumber = 19 + Math.floor(Math.random()* 120);
 console.log("you gotta guess this number " + randomNumber);
@@ -31,26 +32,27 @@ console.log("black crystal number" + blackCrystal);
 
 // resets game when user wins or lose
 var reset = function() {
-    userTotal= 0;
+     userTotal= 0;
 
-var randomNumber = 19 + Math.floor(Math.random()* 120);
-console.log("you gotta guess this number " + randomNumber);
-    var pinkCrystal = 1 + Math.floor(Math.random() * 12);
-console.log("pink crystal number " + pinkCrystal);
+    randomNumber = 19 + Math.floor(Math.random()* 120);
+    console.log("you gotta guess this number " + randomNumber);
 
-var purpleCrystal = 1 + Math.floor(Math.random() * 12);
-console.log("purple crystal number" + purpleCrystal); 
+    pinkCrystal = 1 + Math.floor(Math.random() * 12);
+    console.log("pink crystal number " + pinkCrystal);
 
-var orangeCrystal = 1 + Math.floor(Math.random() * 12);
-console.log("orange crystal number" + orangeCrystal); 
+    purpleCrystal = 1 + Math.floor(Math.random() * 12);
+    console.log("purple crystal number" + purpleCrystal); 
 
-var blackCrystal = 1 + Math.floor(Math.random() * 12);
-console.log("black crystal number" + blackCrystal); 
+    orangeCrystal = 1 + Math.floor(Math.random() * 12);
+    console.log("orange crystal number" + orangeCrystal); 
 
-$("#numberToGuess").html(randomNumber);
-$("#totalScore").html(userTotal);
-$("#wins").html(wins);
-$("#losses").html (losses);
+    blackCrystal = 1 + Math.floor(Math.random() * 12);
+    console.log("black crystal number" + blackCrystal); 
+
+    $("#numberToGuess").html(randomNumber);
+    $("#totalScore").html(userTotal);
+    $("#wins").html(wins);
+    $("#losses").html (losses);
 
 
 };
